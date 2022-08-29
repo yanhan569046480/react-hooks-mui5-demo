@@ -1,6 +1,6 @@
 import './App.css';
 import BasicTable from "./components/BasicTable";
-import {Alert, AlertTitle, Box, Paper} from "@mui/material";
+import {Alert, Paper} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
 function App() {
