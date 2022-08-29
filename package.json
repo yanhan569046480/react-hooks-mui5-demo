@@ -21,6 +21,7 @@
     ]
   },
   "scripts": {
+    "format": "prettier --write {src,mocks}/**/*.{js,jsx,ts,tsx,json,css,scss,less,md} *.{js,md}",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
