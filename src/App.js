@@ -9,7 +9,7 @@ function App() {
       <Alert severity="error">This is an error alert — check it out!</Alert>
 
       <Grid container spacing={0}>
-        <Grid item xs={6} xsOffset={3}>
+        <Grid item xs={12}>
           <Paper elevation={3} >
             <BasicTable />
           </Paper>
