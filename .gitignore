@@ -27,3 +27,5 @@ yarn-error.log*
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/react-hooks-mui5-demo.iml
 /.idea/vcs.xml
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/codeStyles/Project.xml
