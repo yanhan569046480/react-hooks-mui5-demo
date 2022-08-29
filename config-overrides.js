@@ -6,13 +6,10 @@ function resolve(dir) {
 
 const {
   addDecoratorsLegacy,
-  useEslintRc,
   disableEsLint,
   override,
-  addLessLoader,
   addBabelPlugin,
   addWebpackAlias,
-  addWebpackPlugin,
   setWebpackOptimizationSplitChunks,
 } = require('customize-cra');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -78,11 +75,7 @@ const customWebpackConfig = (config) => {
 };
 module.exports = override(
   addDecoratorsLegacy(),
-  // useEslintRc('./.eslintrc'),
   disableEsLint(),
-  addLessLoader({
-    javascriptEnabled: true,
-  }),
   addBabelPlugin('react-hot-loader/babel'),
   addWebpackAlias({
     'react-dom':
@@ -159,6 +152,4 @@ module.exports = override(
     },
   }),
   customWebpackConfig,
-  // addWebpackPlugin(new HardSourceWebpackPlugin()),
-  // addWebpackPlugin(new BundleAnalyzerPlugin()),
 );
