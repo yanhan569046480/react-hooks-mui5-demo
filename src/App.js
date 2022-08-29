@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import BasicTable from "./components/BasicTable";
+import {Alert, AlertTitle, Box, Paper} from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Alert severity="error">This is an error alert — check it out!</Alert>
+
+      <Grid container spacing={0}>
+        <Grid item xs={6} xsOffset={3}>
+          <Paper elevation={3} >
+            <BasicTable />
+          </Paper>
+        </Grid>
+      </Grid>
     </div>
   );
 }
