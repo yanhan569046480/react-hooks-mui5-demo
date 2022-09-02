@@ -34,8 +34,7 @@ function useRows(){
 
 export default function BasicTable() {
   const {
-    rows,
-    setRows
+    rows
   } = useRows();
 
   return (
