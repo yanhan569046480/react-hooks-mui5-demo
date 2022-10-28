@@ -10,7 +10,6 @@ import DateAndTimePickers from './components/DateAndTimePickers';
 function App() {
   return (
     <div className="App">
-
       <Grid container spacing={0}>
         <Grid item xs={6} xsOffset={3}>
           <Stack spacing={2}>
