@@ -10,18 +10,38 @@ import DateAndTimePickers from './components/DateAndTimePickers';
 function App() {
   return (
     <div className="App">
-      <Grid container spacing={0}>
-        <Grid item xs={6} xsOffset={3}>
+      <Grid container spacing={2}>
+        <Grid item xs={6} style={{
+          border: '1px solid black',
+          padding: '8px'
+        }}>
           <Stack spacing={2}>
-            <Alert severity="error">This is an error alert — check it out!</Alert>
+            <MediaControlCard  style={{
+              border: '1px solid black',
+              padding: '8px'
+            }}/>
 
-            <BasicTable />
+            <DateAndTimePickers  style={{
+              border: '1px solid black',
+              padding: '8px'
+            }}/>
+          </Stack>
+        </Grid>
 
-            <Variants />
+        <Grid item xs={6} style={{
+          border: '1px solid black',
+          padding: '8px'
+        }}>
+          <Stack spacing={2}>
+            <Alert severity="error" style={{
+              border: '1px solid black',
+              padding: '8px'
+            }}>This is an error alert — check it out!</Alert>
 
-            <MediaControlCard />
-
-            <DateAndTimePickers />
+            <BasicTable  style={{
+              border: '1px solid black',
+              padding: '8px'
+            }}/>
           </Stack>
         </Grid>
       </Grid>
